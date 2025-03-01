@@ -9,7 +9,7 @@ grok-share-server的部署
 后台路由为 `/lyy0709`
 
 ```bash
-curl -sSfL https://raw.githubusercontent.com/lyy0709/grok-share-server-deploy/deploy/quick-install.sh -o quick-install.sh
+curl -sSfL https://raw.githubusercontent.com/lyy0709/grok-share-server-deploy/refs/heads/main/quick-install.sh -o quick-install.sh
 chmod +x quick-install.sh
 ./quick-install.sh
 ```
