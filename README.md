@@ -4,10 +4,20 @@ grok-share-server的部署
 
 快速部署 务必前往`docker-compose.yml`文件修改相关配置，首次启动会下载相关文件导致页面显示不正常，再次刷新即可
 
+后台路由为 `/lyy0709`
+
 ```bash
 curl -sSfL https://raw.githubusercontent.com/lyy0709/grok-share-server-deploy/deploy/quick-install.sh -o quick-install.sh
 chmod +x quick-install.sh
 ./quick-install.sh
+```
+
+更新服务
+
+```bash
+cd grok-share
+chmod +x deploy.sh
+./deploy.sh
 ```
 
 ## 相关项目
