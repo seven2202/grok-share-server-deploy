@@ -3,7 +3,7 @@ set -e
 
 ## 克隆仓库到本地
 echo "clone repository..."
-git clone -b deploy  --depth=1 https://github.com/lyy0709/grok-share-server-deploy.git grok-share
+git clone https://github.com/lyy0709/grok-share-server-deploy.git grok-share
 
 ## 进入目录
 cd grok-share
