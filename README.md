@@ -41,7 +41,7 @@ chmod +x deploy.sh
 - https://github.com/xyhelper/chatgpt-mirror-server-deploy
 
 ## 联系方式
-![]()
+![](https://raw.githubusercontent.com/lyy0709/lyy0709/refs/heads/main/img/IMG_8139.jpeg)
 
 ## 免责声明
 
