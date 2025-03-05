@@ -9,12 +9,13 @@ grok-share-server的部署
 
 
 ## 更新日志
+- 20250304 修复本地oauth无法使用pro账号的问题，增加备注显示错误提示
 - 20250303 修复首次打开样式等打开失败导致显示不正常，修复了上传文件后打开页面失败，增加list.js，请自行配置
 - 20250302 添加了自动获取账号的剩余次数功能，后台页面新增了剩余次数的显示，修改oauth功能，增加isPro参数，修复历史记录显示
 - 20250301 后台更新自动获取对应的号各个模型的用量情况，每次新建对话自动启用最多次可用模型的账号
 
 ## 快速部署 
-务必前往`docker-compose.yml`文件修改相关配置
+**务必**前往`docker-compose.yml`文件修改相关配置，向本人询问已在部署中说明的问题收费为20/问题
 
 后台路由为 `/lyy0709`
 
@@ -39,6 +40,8 @@ chmod +x deploy.sh
 - https://github.com/xyhelper/chatgpt-share-server-deploy
 - https://github.com/xyhelper/chatgpt-mirror-server-deploy
 
+## 联系方式
+![]()
 
 ## 免责声明
 
