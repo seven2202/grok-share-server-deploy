@@ -9,6 +9,7 @@ grok-share-server的部署
 
 
 ## 更新日志
+- 20250309 屏蔽一些接口，增加对失效账号的检查
 - 20250303 修复首次打开样式等打开失败导致显示不正常，修复了上传文件后打开页面失败，增加list.js，请自行配置
 - 20250302 添加了自动获取账号的剩余次数功能，后台页面新增了剩余次数的显示，修改oauth功能，增加isPro参数，修复历史记录显示
 - 20250301 后台更新自动获取对应的号各个模型的用量情况，每次新建对话自动启用最多次可用模型的账号
@@ -31,6 +32,43 @@ cd grok-share
 chmod +x deploy.sh
 ./deploy.sh
 ```
+
+## 限速服务以及对话审核
+
+参考项目`https://github.com/cockroachai/auditlimit`
+
+## oauth第三方对接
+
+配置环境变量
+
+```yml
+OAUTH_URL: https://xxxxx.xxx.com/oauth
+```
+
+当该值被配置后，用户登陆时将向该地址 POST 以下数据
+
+```
+userToken: 用户Token
+```
+
+允许用户登陆接口应返回 json 数据
+
+```json
+{
+  "code": 1,
+  "msg": "登陆成功时的提示信息",
+  "isPro": true,
+  "expireTime": "2023-05-09 12:00:00",
+}
+```
+
+其中 code 为 1 时表示允许登陆，其他值表示不允许登陆
+
+msg 为登陆成功/失败时的提示信息
+
+isPro 为用户是否为pro用户
+
+expireTime为用户剩余时间
 
 ## 相关项目
 
