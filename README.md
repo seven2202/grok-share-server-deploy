@@ -9,6 +9,7 @@ grok-share-server的部署
 
 
 ## 更新日志
+- 20250330 修复了一些小问题
 - 20250328 增加prompt的隔离，（防止恶意设置prompt，不过因为是自动选车，会出现无法正常在设置里加载写了什么，但可以正常修改和取消，取消需要点两次）
 - 20250321 增加对对话接口报错的弹窗，补充开放灰度功能
 - 20250315 增加部分接口，修复聊天记录丢失的情况，增加对xy网关的支持（可选）
@@ -39,7 +40,7 @@ chmod +x deploy.sh
 
 ## 限速服务以及对话审核
 
-参考项目`[https://github.com/lyy0709/auditlimit](https://github.com/lyy0709/auditlimit)`
+参考项目[https://github.com/lyy0709/auditlimit](https://github.com/lyy0709/auditlimit)
 
 ## oauth第三方对接
 
